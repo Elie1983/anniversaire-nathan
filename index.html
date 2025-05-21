@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitation - Anniversaire de Nathan</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #e8f5e9;
+      margin: 0;
+      padding: 0;
+      color: #2e7d32;
+    }
+    .card {
+      max-width: 700px;
+      margin: 20px auto;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border: 4px solid #81c784;
+    }
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2em;
+      margin: 0.5em 0;
+    }
+    .jungle-theme {
+      background: url('https://www.transparenttextures.com/patterns/green-gobbler.png');
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .photo img {
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #388e3c;
+      margin-bottom: 10px;
+    }
+    .info, .quiz, .rsvp {
+      margin: 20px 0;
+    }
+    .quiz label {
+      display: block;
+      margin: 5px 0;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #81c784;
+      font-size: 1em;
+    }
+    button {
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <div class="card jungle-theme">
+    <div class="header">
+      <h1>🎉 Nathan fête ses 1 an ! 🐒🦁🌿</h1>
+      <p>Tu es invité(e) à une aventure dans la jungle !</p>
+    </div>
+    <div class="photo" style="text-align: center;">
+      <img src="Screenshot_20250504_021632_Gallery.jpg" alt="Nathan">
+    </div>
+    <div class="info">
+      <p><strong>📅 Date :</strong> Samedi 22 juin 2025</p>
+      <p><strong>🕒 Heure :</strong> 15h00</p>
+      <p><strong>📍 Lieu :</strong> 12 rue des Petits Pas, 75000 Paris</p>
+    </div>
+    <div class="quiz">
+      <h3>🌴 Devine un peu !</h3>
+      <form>
+        <label>1. Quel est mon jouet préféré ?</label>
+        <label><input type="radio" name="jouet"> Mon doudou 🧸</label>
+        <label><input type="radio" name="jouet"> Une cuillère en bois 🥄</label>
+        <label><input type="radio" name="jouet"> Le téléphone de papa 📱</label>
+
+        <label>2. Combien de dents ai-je ?</label>
+        <label><input type="radio" name="dents"> 2</label>
+        <label><input type="radio" name="dents"> 4</label>
+        <label><input type="radio" name="dents"> 6</label>
+
+        <label>3. Quelle est ma nourriture préférée ?</label>
+        <label><input type="radio" name="nourriture"> Compote 🍎</label>
+        <label><input type="radio" name="nourriture"> Purée de carottes 🥕</label>
+        <label><input type="radio" name="nourriture"> Gâteau au chocolat 🍫</label>
+      </form>
+    </div>
+    <div class="rsvp">
+      <h3>🎈 Tu viens ?</h3>
+      <form>
+        <label><input type="radio" name="rsvp"> Oui, avec plaisir !</label><br>
+        <label><input type="radio" name="rsvp"> Non, malheureusement</label><br>
+        <label>Nombre de personnes :</label>
+        <input type="text" name="personnes">
+        <label>Laisse un petit mot à Nathan :</label>
+        <textarea rows="3" placeholder="Un joyeux anniversaire au petit aventurier !"></textarea>
+        <br><br>
+        <button type="submit">Envoyer ma réponse 📨</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
